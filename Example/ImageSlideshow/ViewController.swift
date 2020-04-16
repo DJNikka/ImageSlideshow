@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
         slideshow.setImageInputs(localSource)
 
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.didTap))
+        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.didTap))
         slideshow.addGestureRecognizer(recognizer)
     }
 
